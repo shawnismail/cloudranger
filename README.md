@@ -1,4 +1,4 @@
 # cloudranger
 Assets from 70-533 sessions
 
-All seets for the course goes here.
+All assets for the course goes here.
