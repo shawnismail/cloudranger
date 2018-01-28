@@ -1,5 +1,9 @@
-https://www.microsoft.com/en-us/learning/course.aspx?cid=20533
+Details of the exam/Skills measured: https://www.microsoft.com/en-us/learning/exam-70-533.aspx
 
-https://www.microsoft.com/en-us/learning/exam-70-533.aspx
+The Course curriculum: https://www.microsoft.com/en-us/learning/course.aspx?cid=20533
+
+Azure documentation (and your best friend): https://docs.microsoft.com/en-us/azure/
+
+Azure Docs: https://docs.microsoft.com/en-us/azure/
 
 http://download.microsoft.com/download/8/4/8/848DD46A-05F2-4021-A118-036FC06647C5/533_OD_Changes.pdf
