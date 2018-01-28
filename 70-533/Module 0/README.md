@@ -6,6 +6,6 @@ In this module I introduce you to this course. I will further get into where all
 #### Lessons:
 
 - About this course
-- Overview of Microsoft 70-533 
+- Overview of the Microsoft exam 70-533
 
 
