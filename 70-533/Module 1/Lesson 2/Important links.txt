@@ -1,0 +1,51 @@
+Azure regions:
+
+https://azure.microsoft.com/en-ca/regions/
+
+Microsoft Datacenter Tour:
+
+https://cloud-platform-assets.azurewebsites.net/datacenter/
+
+Azure Regional Pairs:
+
+https://docs.microsoft.com/en-us/azure/best-practices-availability-paired-regions
+
+
+Azure Subscription limits and quotas:
+
+https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits
+
+Azure free signup:
+
+https://azure.microsoft.com
+
+Azure Organizational Signup:
+
+https://account.azure.com/organization
+
+Azure Site:
+
+https://azure.microsoft.com
+
+All Azure Services:
+
+https://azure.microsoft.com/en-us/services/
+
+Azure Billing:
+
+https://docs.microsoft.com/en-us/azure/billing/
+
+Azure subscription and service limits, quotas, and constraints:
+
+https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits
+
+Azure Billing:
+
+(PAYG) https://azure.microsoft.com/en-us/offers/ms-azr-0003p/
+
+Azure Pricing:
+
+https://azure.microsoft.com/en-us/pricing/
+
+
+

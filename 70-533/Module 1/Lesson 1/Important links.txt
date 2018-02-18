@@ -1,0 +1,4 @@
+NIST definition of cloud computing:
+
+http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf
+
