@@ -1,0 +1,5 @@
+
+Azure portal: https://portal.azure.com
+
+Old Azure classic portal: https://manage.windowsazure.com (may not work any longer or may be redirecting to new portal)
+
