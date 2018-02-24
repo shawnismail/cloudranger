@@ -1,0 +1,14 @@
+
+Azure PowerShell Module Browser: https://docs.microsoft.com/en-us/powershell/module/
+
+Azure PowerShell open-source project: https://github.com/Azure/azure-powershell/
+
+Azure download page: https://azure.microsoft.com/en-us/downloads/
+
+Windows Management Framework 5.1 download: https://www.microsoft.com/en-us/download/details.aspx?id=54616
+
+Azure PowerShell to create a service principal to access resources:
+https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-authenticate-service-principal
+
+
+Install PowerShell on Linux: https://docs.microsoft.com/en-us/powershell/scripting/setup/installing-powershell-core-on-macos-and-linux?view=powershell-6

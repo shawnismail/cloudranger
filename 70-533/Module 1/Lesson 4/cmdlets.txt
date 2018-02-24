@@ -1,0 +1,46 @@
+# Check if Azure modules are installed and what version is installed
+Get-Module AzureRM -ListAvailable | Select-Object -Property Name,Version,Path
+
+# Uninstall all Azure modules (this will remove Azure PowerShell modules. # Ideally you do not have to run this)
+Get-Module -ListAvailable AzureRM* | Uninstall-Module
+
+# Install Azure PowerShell modules 
+Install-Module -Name AzureRM
+ 
+# PowerShell gallery installs modules at this location
+C:\Program Files\WindowsPowerShell\Modules
+
+# Update to the latest version of AzureRM
+Update-Module -Name AzureRM
+
+# Connect to the Azure account
+Add-AzureRmAccount
+
+# Check which subscription you are connected to
+Get-AzureRmContext
+
+
+## Azure PowerShell on Linux
+
+# Import the public repository GPG keys
+curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+
+# Register the Microsoft Ubuntu repository
+curl https://packages.microsoft.com/config/ubuntu/16.04/prod.list | sudo tee /etc/apt/sources.list.d/microsoft.list
+
+# Update the list of products
+sudo apt-get update
+
+# Install PowerShell
+sudo apt-get install -y powershell
+
+# Start PowerShell
+sudo pwsh
+
+# Install AzureRM modules
+Install-Module AzureRM.NetCore
+
+# Import AzureRM modules
+Import-Module AzureRM.Netcore
+
+
