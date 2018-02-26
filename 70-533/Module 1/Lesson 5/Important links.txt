@@ -1,0 +1,5 @@
+Azure CLI open-source project: https://github.com/Azure/azure-cli
+
+Install Azure CLI 2.0 on Linux: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
+
+Install Azure CLI 2.0 on Windows: https://azurecliprod.blob.core.windows.net/msi/azure-cli-latest.msi
