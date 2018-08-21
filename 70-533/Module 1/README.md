@@ -11,5 +11,5 @@ This module introduces cloud solutions in general and then focuses on the servic
 - Managing Azure with Windows PowerShell 
 - Managing Azure with Azure CLI
 - Overview of Azure deployment models 
-- Managing and monitoring Azure resources 
+
 
