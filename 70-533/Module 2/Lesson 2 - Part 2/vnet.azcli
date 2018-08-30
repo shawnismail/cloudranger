@@ -1,0 +1,101 @@
+#!/bin/bash
+
+# az login 
+
+RgName="rangervnetrg"
+Location="eastus2"
+
+
+# Create a resource group
+az group create --name $RgName --location $Location
+
+# Create a virtual network with a first subnet
+az network vnet create \
+  --name myvnet \
+  --resource-group $RgName \
+  --location $Location \
+  --address-prefix 10.3.0.0/16 \
+  --subnet-name mysubnet1 \
+  --subnet-prefix 10.3.1.0/24
+
+# Create second subnet
+az network vnet subnet create \
+  --address-prefix 10.3.2.0/24 \
+  --name mysubnet2 \
+  --resource-group $RgName \
+  --vnet-name myvnet
+
+  
+# Create public IP addresses for the virtual machines
+az network public-ip create --resource-group $RgName --name server1-pubip
+az network public-ip create --resource-group $RgName --name server2-pubip
+az network public-ip create --resource-group $RgName --name server3-pubip
+
+# Create NICs for the virtual machines
+az network nic create \
+  --resource-group $RgName \
+  --name server1-nic \
+  --vnet-name myvnet \
+  --subnet mysubnet1 \
+  --public-ip-address server1-pubip \
+  --private-ip-address 10.3.1.5
+
+az network nic create \
+  --resource-group $RgName \
+  --name server2-nic \
+  --vnet-name myvnet \
+  --subnet mysubnet1 \
+  --public-ip-address server2-pubip \
+  --private-ip-address 10.3.1.6
+
+  az network nic create \
+  --resource-group $RgName \
+  --name server3-nic \
+  --vnet-name myvnet \
+  --subnet mysubnet2 \
+  --public-ip-address server3-pubip \
+  --private-ip-address 10.3.2.5
+
+
+#############################################################
+
+# Acquire Server credentials
+AdminPassword=MyComplexPassword1
+
+
+# Create Server 1, 2 & 3
+az vm create \
+    --resource-group $RgName \
+    --name server1 \
+    --location $Location \
+    --nics server1-nic \
+    --image win2016datacenter \
+    --size Standard_DS2 \
+    --admin-username shawn \
+    --admin-password $AdminPassword \
+    --no-wait
+
+az vm create \
+    --resource-group $RgName \
+    --name server2 \
+    --location $Location \
+    --nics server2-nic \
+    --image win2016datacenter \
+    --size Standard_DS2 \
+    --admin-username shawn \
+    --admin-password $AdminPassword \
+    --no-wait
+
+az vm create \
+    --resource-group $RgName \
+    --name server3 \
+    --location $Location \
+    --nics server3-nic \
+    --image win2016datacenter \
+    --size Standard_DS2 \
+    --admin-username shawn \
+    --admin-password $AdminPassword \
+    --no-wait
+
+# Remove Resource Group
+# az group delete --name $RgName --yes
